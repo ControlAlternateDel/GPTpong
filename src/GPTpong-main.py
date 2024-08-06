@@ -1,3 +1,27 @@
+import os
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
+import pygame
+import random
+
+# Initialize Pygame
+pygame.init()
+os.system("cls")
+
+# Constants for screen dimensions
+WIDTH, HEIGHT = 800, 600
+
+# Colors
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+
+# Create the screen
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("GPTpong")
+window_icon = pygame.image.load("img/GPTpong.png")
+pygame.display.set_icon(window_icon)
+
+# Paddle attributes
+"GPTpong.pyw" [dos] 122L, 3837B
 import pygame
 import random
 import os
